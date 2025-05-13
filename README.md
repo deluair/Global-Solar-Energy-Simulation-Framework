@@ -2,6 +2,20 @@
 
 This project aims to develop a comprehensive simulation framework for global solar energy deployment, considering technical, economic, policy, social, and environmental factors.
 
+## Current Status
+
+This framework is currently in an active development phase, with core functionalities established. The system can perform detailed techno-economic simulations for investment decisions in solar PV and energy storage technologies across multiple regions. Key capabilities include:
+
+*   Modeling of various solar technologies (e.g., TOPCon_PV, AdvancedMonocrystallineSilicon) and energy storage (e.g., LFP_Battery).
+*   Dynamic cost modeling based on learning curves and supply chain factors.
+*   Market simulation considering regional energy prices and demand.
+*   Investment decision modeling based on Net Present Value (NPV) and attractiveness scores.
+*   Grid capacity evolution based on new investments.
+*   Generation of detailed simulation results in CSV format.
+*   Automated generation of an HTML analysis report with visualizations from the simulation output.
+
+The current capabilities align broadly with Phase 2-3 of the project's "Great Plan," focusing on economic and technological modeling with initial grid and policy considerations.
+
 ## Awesome Task List (High-Level Modules)
 
 1. **Foundation Elements Module**
@@ -88,23 +102,33 @@ This project aims to develop a comprehensive simulation framework for global sol
 
 ## Project Structure
 
+The project follows a standard Python project layout:
+
+```
 Global_Solar_Energy_Simulation_Framework/
 ├── README.md
-├── data/
+├── requirements.txt
+├── .gitignore
+├── run_full_simulation.py                # Main script to run a full simulation
+├── generate_report.py                  # Script to generate HTML report from simulation CSV
+├── full_simulation_results_*.csv       # Example CSV output from a simulation run
+├── simulation_analysis_report.html     # Example HTML report
+├── data/                                 # For raw, processed, and output datasets
 │   ├── raw/
 │   ├── processed/
 │   └── output/
-├── docs/
+├── docs/                                 # For design documents, API specs, etc.
 │   ├── design/
 │   └── api/
-├── notebooks/
+├── examples/                             # Example input files or configurations
+├── notebooks/                            # Jupyter notebooks for analysis, experimentation
 │   ├── 01_foundation_elements/
 │   ├── 02_economic_framework/
 │   └── ... (subfolders for other modules)
-├── src/
-│   ├── core_engine/
+├── src/                                  # Source code
+│   ├── core_engine/                      # (Future placeholder or for more abstract engine parts)
 │   ├── data_management/
-│   ├── modules/
+│   ├── modules/                          # Core simulation modules
 │   │   ├── foundation_elements/
 │   │   ├── economic_framework/
 │   │   ├── policy_landscape/
@@ -114,10 +138,78 @@ Global_Solar_Energy_Simulation_Framework/
 │   │   ├── socioeconomic_dimensions/
 │   │   ├── sector_coupling/
 │   │   └── analytics_decision_support/
+│   ├── simulation_engine/                # Current main simulation engine orchestrator
 │   ├── utils/
 │   └── config/
-├── tests/
+├── tests/                                # Unit and integration tests
 │   ├── unit/
 │   └── integration/
-├── scripts/
-└── requirements.txt
+└── scripts/                              # Utility or helper scripts
+```
+
+## Getting Started
+
+### Prerequisites
+
+*   Python 3.9 or higher.
+*   Git (for cloning the repository).
+
+### Installation
+
+1.  **Clone the repository (if you haven't already):**
+    ```bash
+    git clone https://github.com/deluair/Global-Solar-Energy-Simulation-Framework.git
+    cd Global-Solar-Energy-Simulation-Framework
+    ```
+
+2.  **Set up a virtual environment (recommended):**
+    ```bash
+    python -m venv venv
+    # On Windows
+    venv\\Scripts\\activate
+    # On macOS/Linux
+    source venv/bin/activate
+    ```
+
+3.  **Install the required dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Running a Simulation
+
+To run a full simulation with the sample configuration:
+
+```bash
+python run_full_simulation.py
+```
+
+This script will:
+*   Initialize all necessary models (SolarTech, Cost, Policy, Market, Grid, etc.).
+*   Run the simulation for the configured period (e.g., 2025-2030).
+*   Log detailed information about the simulation process to the console.
+*   Save the aggregated simulation results to a CSV file in the root directory (e.g., `full_simulation_results_YYYYMMDD_HHMMSS.csv`).
+
+### Generating the Analysis Report
+
+After a simulation run is complete and a results CSV file has been generated, you can create an HTML analysis report:
+
+1.  Ensure the `CSV_FILE_NAME` variable in `generate_report.py` points to your desired simulation results CSV file (it's currently set to pick up one of the recent files by pattern, but you might want to make it more specific or pass as an argument in future enhancements).
+2.  Run the report generation script:
+    ```bash
+    python generate_report.py
+    ```
+
+This will:
+*   Read the specified CSV data.
+*   Perform data analysis and generate various plots (e.g., cumulative investments, regional market dynamics, generation mix).
+*   Embed these visualizations and summary tables into an HTML file named `simulation_analysis_report.html` in the root directory.
+
+## Key Scripts & Outputs
+
+*   **`run_full_simulation.py`**: The main executable script that orchestrates a full simulation run based on the configurations in `get_sample_simulation_config()`.
+*   **`generate_report.py`**: A script that takes the CSV output from a simulation run and produces a detailed HTML report with data summaries and visualizations.
+*   **`full_simulation_results_YYYYMMDD_HHMMSS.csv`**: The primary data output of a simulation run, containing yearly investments and market outcomes.
+*   **`simulation_analysis_report.html`**: An HTML report providing a consultant-style analysis of the simulation results, including charts and summary tables.
+
+*(The rest of the README, including the detailed module list and phased plan, remains an excellent guide to the project's long-term vision and architecture.)*
