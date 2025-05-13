@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files
+/data/raw/*
+/data/processed/*
+/data/output/*
+# If you have very large data files not suitable for Git, list them here or use Git LFS
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+venv/
+ENV/
+
+# OS specific
+.DS_Store
+Thumbs.db

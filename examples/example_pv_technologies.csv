@@ -1,0 +1,10 @@
+name,technology_type,form_factor,efficiency_projections_data,notes
+TOPCon,Silicon,Utility-Scale Single-Axis,"2025:0.245;2030:0.255;2035:0.262","Advanced n-type TOPCon cells."
+HJT,Silicon,High-Efficiency Rooftop,"2025:0.25;2030:0.268;2035:0.275","Heterojunction technology."
+IBC,Silicon,Premium Residential,"2025:0.252;2030:0.272;2035:0.280","Interdigitated Back Contact."
+Silicon-Perovskite Tandem,Tandem,Utility-Scale Fixed-Tilt,"2025:0.28;2028:0.30;2030:0.32;2035:0.34","Projected commercial efficiency. From 34.6% demonstrated."
+All-Perovskite Multi-Junction,Tandem,Specialized Applications,"2030:0.25;2035:0.30","Emerging, focus on stability and scale-up."
+Quantum Dot Silicon,Emerging,Niche Applications,,"Early research phase. May enhance existing silicon."
+Organic PV,Emerging,Building-Integrated (BIPV),"2028:0.15;2035:0.20","Flexible and transparent applications."
+Ultra-Thin Crystalline Silicon,Emerging,Lightweight Applications,"2028:0.22;2035:0.24","Potential for material savings and flexibility."
+Advanced Bifacial (e.g. n-PERT),Silicon,Utility-Scale Tracking,"2025:0.235;2030:0.245;2035:0.250","Represents mainstream bifacial; gain modeled separately."

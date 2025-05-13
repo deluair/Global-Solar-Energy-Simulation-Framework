@@ -1,0 +1,11 @@
+category_id,name,description
+URBAN,Urban and Built-up,Areas characterized by high population density and man-made structures.
+AGRICROP,Cropland,Land used for cultivation of crops.
+GRASS,Grassland and Pasture,Areas covered by grasses, used for grazing or as natural meadows.
+FOREST,Forested Land,Areas covered by trees, including managed forests and natural woodlands.
+WATER,Water Bodies,Includes rivers, lakes, and reservoirs.
+BARREN,Barren Land,Areas with little or no vegetation, such as deserts or rocky terrain.
+PROTECT,Protected Area,Land designated for conservation, e.g., national parks. May overlap other categories.
+SOLAR_EXCL,Solar Exclusion Zone,Specific areas deemed unsuitable for solar development for various reasons not covered by other types.
+INDUS,Industrial/Commercial,Land zoned for industrial or commercial use.
+INFRA,Infrastructure Corridors,Land occupied by major infrastructure like highways or high-voltage transmission lines.

@@ -1,0 +1,8 @@
+# Python package dependencies will be listed here
+# Example:
+# pandas
+# numpy
+# matplotlib
+# scipy
+# jupyterlab
+# scikit-learn

@@ -1,0 +1,8 @@
+name,type,form_factor,cost_per_kwh_projection_usd,round_trip_efficiency_projection_percent,commercial_scale_year,projected_price_reduction_factor_2035,notes
+Lithium-ion LFP,Electrochemical,Battery Pack,"2025:120;2030:80;2035:60","2025:90;2030:92;2035:94",,0.1,Dominant battery chemistry. Price reduction by 90% by 2035 from 2010 levels.
+Sodium-ion,Electrochemical,Battery Pack,"2026:100;2030:65;2035:45","2026:88;2030:90;2035:92",2026,0.1,Commercial scale by 2026, good for stationary storage.
+Solid-State Lithium,Electrochemical,Battery Pack,"2028:150;2030:100;2035:70","2028:92;2030:94;2035:95",2028,0.1,Commercial introduction by 2028, higher energy density potential.
+Iron-Air,Long-Duration,Grid-Scale Container,"2025:50;2030:20;2035:10","2025:60;2030:65;2035:70",,0.1,Projected 150 GWh deployed by 2030, suitable for 100+ hours duration.
+Compressed Air Energy Storage (CAES),Long-Duration,Underground Cavern,"2025:80;2030:60;2035:50","2025:70;2030:75;2035:78",,0.1,Utilizes geological formations or purpose-built vessels.
+Gravity-Based Storage,Long-Duration,Mechanical Structure,"2025:150;2030:100;2035:75","2025:80;2030:82;2035:85",,0.1,Uses potential energy of heavy masses.
+Pumped Hydro Storage,Long-Duration,Reservoir Pair,"2025:70;2030:65;2035:60","2025:75;2030:80;2035:82",,0.1,Mature technology, geographically constrained.

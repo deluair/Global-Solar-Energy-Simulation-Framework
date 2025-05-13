@@ -1,0 +1,13 @@
+name,iso_code,is_key_market,sub_national_regions
+United States,USA,TRUE,"California;Texas;New York;Florida"
+Germany,DEU,TRUE,"Bavaria;Baden-Württemberg;North Rhine-Westphalia"
+China,CHN,TRUE,"Beijing;Shanghai;Guangdong;Jiangsu;Shandong;Zhejiang"
+India,IND,TRUE,"Maharashtra;Tamil Nadu;Gujarat"
+Brazil,BRA,FALSE,
+South Africa,ZAF,FALSE,
+France,FRA,TRUE,"Île-de-France;Auvergne-Rhône-Alpes"
+Japan,JPN,TRUE,"Kanto;Kansai"
+Egypt,EGY,FALSE,
+Canada,CAN,FALSE,
+Australia,AUS,FALSE,
+United Kingdom,GBR,TRUE,"England;Scotland"

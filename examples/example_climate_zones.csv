@@ -1,0 +1,6 @@
+name,resolution_minutes,data_source_path
+Tropical Monsoon,60,data/climate/tropical_monsoon_hourly.csv
+Arid Desert,60,data/climate/arid_desert_hourly.csv
+Temperate Oceanic,60,data/climate/temperate_oceanic_hourly.csv
+Critical Market Zone A,5,data/climate/critical_market_A_5min.csv
+No Specific Path Zone,60,

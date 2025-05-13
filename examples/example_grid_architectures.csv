@@ -1,0 +1,5 @@
+region_name,transmission_constraints,stability_requirements,interconnection_patterns
+North America Interconnect,High voltage AC/DC lines,High inertia required,Synchronous with WECC/Eastern/ERCOT
+European UCTE,Congested cross-border lines,Frequency stability critical,Synchronous ENTSO-E
+East Asia Grid,Developing HVDC links,Voltage stability concerns,Partially interconnected ASEAN/China grids
+Isolated Microgrid Alpha,Local distribution only,Requires grid-forming inverters,Islanded with backup generator
